@@ -1,6 +1,6 @@
 # Hate Speech Detection using Transformers
 
-This project demonstrates hate speech detection in tweets using advanced NLP techniques and deep learning (PyTorch). The core model is a Transformer-based classifier inspired by the "Attention Is All You Need" paper.
+This project demonstrates hate speech detection in tweets using advanced NLP techniques and deep learning (PyTorch). The core model is a Transformer-based classifier.
 
 ## Project Workflow
 
@@ -42,10 +42,29 @@ This project demonstrates hate speech detection in tweets using advanced NLP tec
 
 ## Usage
 
-1. Clone this repo and install dependencies.
-2. Run `Project-Hate Speech.ipynb` step by step.
-3. Download the dataset from Kaggle.
-4. Follow notebook instructions for training and evaluation.
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/yourusername/Hate_Speech.git
+   cd Hate_Speech
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   ```
+
+3. **Download the dataset**
+   - Go to [Kaggle - Twitter Hate Speech](https://www.kaggle.com/vkrahul/twitter-hate-speech?select=train_E6oV3lV.csv) and download the CSV file.
+   - Place the dataset in the project folder.
+
+4. **Run the notebook**
+   - Open `Project-Hate Speech.ipynb` in Jupyter or VS Code.
+   - Execute the cells step by step to preprocess data, train the model, and evaluate results.
+
+5. **Inference**
+   - After training, use the provided inference code in the notebook to classify new tweets.
+   - Save results to CSV as shown in the notebook.
 
 ## References
 
@@ -56,6 +75,4 @@ This project demonstrates hate speech detection in tweets using advanced NLP tec
 ## Notes
 
 - The model is trained on a highly imbalanced dataset; undersampling is used.
-- For best results, update the slang dictionary and retrain periodically.
-
----
+- For best results, update the slang dictionary and
